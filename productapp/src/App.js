@@ -15,7 +15,7 @@ export class App extends React.Component {
 
   componentDidMount = () => {
     const config = {
-      distance: "60px",
+      distance: "100px",
       duration: 2500,
       delay: 500,
 	  origin: 'bottom',
@@ -27,9 +27,9 @@ export class App extends React.Component {
     sr.reveal(`.home__footer`, config);
 
     sr.reveal(`.colors__card`, { origin: "top", interval: 100 });
-    sr.reveal(`.specs__data, .discount__animate`, { distance: "100px", duration: 2500, delay: 500, origin: 'left', reset: false });
+    sr.reveal(`.specs__data, .discount__animate`, { distance: "100px", duration: 2500, delay: 500, origin: 'left' });
 
-    sr.reveal(`.specs__img, .discount__img`, { distance: "100px", duration: 2500, delay: 500, origin: 'right', reset: false });
+    sr.reveal(`.specs__img, .discount__img`, config,);
     sr.reveal(`.360__3d`, { origin: "top" });
     sr.reveal(`.360__data`, config);
   }
