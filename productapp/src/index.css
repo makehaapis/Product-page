@@ -425,9 +425,10 @@ canvas {
 
 /*=============== FOOTER ===============*/
 .footer__container {
-	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	grid-template-columns: repeat(3, 33%);
 	row-gap: 2rem;
 }
+
 
 .footer__logo {
 	width: 2rem;
@@ -536,6 +537,9 @@ canvas {
 	.specs__img {
 		width: 200px;
 	}
+	.footer__container {
+		grid-template-columns: 50px repeat(2, 33%);
+	}
 }
 
 /* For medium devices */
@@ -570,6 +574,9 @@ canvas {
 	.colors__container {
 		grid-template-columns: repeat(3, 142px);
 		justify-content: center;
+	}
+	.footer__container {
+		grid-template-columns: 50px repeat(2, 33%);
 	}
 }
 
@@ -637,9 +644,6 @@ canvas {
 	}
 	.colors__img {
 		width: 95px;
-	}
-	.footer__container {
-		grid-template-columns: 0.4fr 0.7fr 0.7fr 1fr;
 	}
 }
 
