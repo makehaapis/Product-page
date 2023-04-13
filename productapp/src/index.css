@@ -343,9 +343,9 @@ canvas {
 }
 
 .specs__img {
-	width: 250px;
+	width: 200px;
 	position: absolute;
-	top: 2rem;
+	top: 12rem;
 	right: -2rem;
 }
 
