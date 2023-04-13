@@ -1,7 +1,7 @@
 import React from 'react'
 import sr from './ScrollReveal'
 import "./index.css";
-import { ArrowBarUp, SendFill, Bluetooth, BatteryCharging, Plug, Mic, BagFill } from "react-bootstrap-icons";
+import { ArrowUpShort, SendFill, BatteryCharging, Plug, BagFill, CameraFill, DisplayFill } from "react-bootstrap-icons";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import {Model} from "./components/Iphone";
@@ -50,7 +50,7 @@ render () {
 					  			<a href="#specs" className="nav__link">Specs</a>
 				  			</li>
 				  			<li className="nav__item">
-					  			<a href="#360" className="nav__link">360</a>
+					  			<a href="#360" className="nav__link">360° View</a>
 				  			</li>
 				  			<li className="nav__item">
 					  			<a href="#colors" className="nav__link">Colors</a>
@@ -88,27 +88,24 @@ render () {
 		<div className="specs__container container grid">
 			<div className="specs__content grid">
 				<div className="specs__data">
-					<Bluetooth></Bluetooth>
-					<h3 className="specs__title">Connection</h3>
-					<span className="specs__subtitle">Bluetooth v5.2</span>
+					<CameraFill></CameraFill>
+					<h3 className="specs__title">Camera</h3>
+					<span className="specs__subtitle">48MP Main: 24 mm, ƒ/1.78 aperture<br></br>12MP Ultra Wide: 13 mm, ƒ/2.2 aperture and 120° field of view<br></br>2MP 2x Telephoto: 48 mm, ƒ/1.78 aperture</span>
 				</div>
-
 				<div className="specs__data">
 					<BatteryCharging></BatteryCharging>
 					<h3 className="specs__title">Battery</h3>
-					<span className="specs__subtitle">Duration 40h</span>
+					<span className="specs__subtitle">3200 mAh<br></br>Up to 95 hours</span>
 				</div>
-
 				<div className="specs__data">
 					<Plug></Plug>
-					<h3 className="specs__title">Load</h3>
-					<span className="specs__subtitle">Fast charge 4.2-AAC</span>
+					<h3 className="specs__title">Power</h3>
+					<span className="specs__subtitle">Fast charge up to 20W<br></br>Wireless charging up to 7.5W</span>
 				</div>
-
 				<div className="specs__data">
-					<Mic></Mic>
-					<h3 className="specs__title">Microphone</h3>
-					<span className="specs__subtitle">Supports Apple Siri <br></br> and Google</span>
+					<DisplayFill></DisplayFill>
+					<h3 className="specs__title">Display</h3>
+					<span className="specs__subtitle">2556x1179 resolution<br></br>6.1‑inch OLED display</span>
 				</div>
 			</div>
 
@@ -132,21 +129,7 @@ render () {
 			</div>
 		</div>
 	</section>
-  <section className="discount section">
-		<div className="discount__container container grid">
-			<div className="discount__animate">
-				<h2 className="discount__title">Sign up for our <br></br> newsletter</h2>
-				<p className="discount__description">And get 50% off your next purchase.</p>
-			<div className="discount__content">
-				<button className="button button--flex">
-					<SendFill size={15}></SendFill>Subscribe
-				</button>
-			</div>
-			</div>
-			<img src="https://assets.codepen.io/7773162/discount.png" alt="" className="discount__img"></img>
-		</div>
-	</section>
-  <section className="colors section" id="colors">
+	<section className="colors section" id="colors">
 		<h2 className="section__title section__title-gradient colors__line">
 			Choose <br></br> Your Style
 		</h2>
@@ -187,6 +170,20 @@ render () {
 					</button>
 				</div>
 			</article>
+		</div>
+	</section>
+  <section className="discount section">
+		<div className="discount__container container grid">
+			<div className="discount__animate">
+				<h2 className="discount__title">Sign up for our <br></br> newsletter</h2>
+				<p className="discount__description">And get 50% off your next purchase.</p>
+			<div className="discount__content">
+				<button className="button button--flex">
+					<SendFill size={15}></SendFill>Subscribe
+				</button>
+			</div>
+			</div>
+			<img src="https://assets.codepen.io/7773162/discount.png" alt="" className="discount__img"></img>
 		</div>
 	</section>
   <footer className="footer section">
@@ -236,7 +233,7 @@ render () {
 
 </footer>
 <a href="#" className="scrollup" id="scroll-up">
-	<ArrowBarUp color="white" size={50} />
+	<ArrowUpShort color="white" size={50} />
 </a>
 </div>
     )
