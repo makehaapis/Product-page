@@ -17,19 +17,21 @@ export class App extends React.Component {
     const config = {
       distance: "60px",
       duration: 2500,
-      delay: 400,
-      reset: true
+      delay: 500,
+	  origin: 'bottom',
+	  reset: true,
     }
     
-    sr.reveal(`.home__header, .section__title`,config, { delay: 600 });
-    sr.reveal(`.home__footer`, { delay: 700 });
+    sr.reveal(`.home__header, .section__title`, config);
+	sr.reveal(`.home__img`, { distance: "100px", duration: 2500, delay: 500, origin: 'top', reset: false })
+    sr.reveal(`.home__footer`, config);
 
-    sr.reveal(`.colors__card, .footer__logo, .footer__content, .footer__copy`,{ origin: "top", interval: 100 });
-    sr.reveal(`.specs__data, .discount__animate`, {origin: "left",interval: 100});
+    sr.reveal(`.colors__card`, { origin: "top", interval: 100 });
+    sr.reveal(`.specs__data, .discount__animate`, { distance: "100px", duration: 2500, delay: 500, origin: 'left', reset: false });
 
-    sr.reveal(`.specs__img, .discount__img`, { origin: "right" });
+    sr.reveal(`.specs__img, .discount__img`, { distance: "100px", duration: 2500, delay: 500, origin: 'right', reset: false });
     sr.reveal(`.360__3d`, { origin: "top" });
-    sr.reveal(`.360__data`);
+    sr.reveal(`.360__data`, config);
   }
 
 render () {
