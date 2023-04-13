@@ -236,10 +236,11 @@ canvas {
 
 /*=============== HOME ===============*/
 .home__img {
-	width: 250px;
+	width: 200px;
 	position: absolute;
-	top: -16rem;
-	right: 1.5rem;
+	right: 5rem;
+	top: 0.5rem;
+	z-index: -1;
 }
 
 .home__data {
@@ -345,7 +346,7 @@ canvas {
 	width: 250px;
 	position: absolute;
 	top: 2rem;
-	right: -4rem;
+	right: -2rem;
 }
 
 /*=============== DISCOUNT ===============*/
@@ -520,6 +521,7 @@ canvas {
 	.home__img {
 		width: 200px;
 		top: -13rem;
+		z-index: -1;
 	}
 	.home__title {
 		top: -4rem;
@@ -545,8 +547,9 @@ canvas {
 		padding-top: 2rem;
 	}
 	.home__img {
-		top: -7rem;
-		left: 0;
+		top: 0rem;
+		left: 1rem;
+		z-index: -1;
 	}
 	.specs__img {
 		position: initial;
@@ -600,8 +603,9 @@ canvas {
 		grid-template-columns: repeat(2, 1fr);
 	}
 	.home__img {
-		top: -9rem;
+		top: -6rem;
 		left: 4rem;
+		z-index: -1;
 	}
 	.home__data {
 		padding-top: 8rem;
@@ -647,7 +651,7 @@ canvas {
 	}
 	.home__img {
 		width: 300px;
-		top: -5rem;
+		top: -7rem;
 	}
 	.home__title {
 		top: -5rem;
